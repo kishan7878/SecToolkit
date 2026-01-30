@@ -1,6 +1,11 @@
 # 🛡️ SecToolkit - Complete Security Toolkit
 
-A comprehensive security toolkit combining Android Security Analysis, Penetration Testing, Development Tools, and Bug Bounty Helpers.
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/kishan7878/SecToolkit?style=social)](https://github.com/kishan7878/SecToolkit/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/kishan7878/SecToolkit?style=social)](https://github.com/kishan7878/SecToolkit/network/members)
+
+A comprehensive security toolkit combining **Android Security Analysis**, **Penetration Testing**, **Development Tools**, and **Bug Bounty Helpers** - all in one place!
 
 ## ⚠️ Disclaimer
 **FOR EDUCATIONAL PURPOSES ONLY**
@@ -8,39 +13,69 @@ A comprehensive security toolkit combining Android Security Analysis, Penetratio
 - Unauthorized access to computer systems is illegal
 - Author is not responsible for misuse
 
-## 🚀 Features
+---
 
-### 1️⃣ Android Security Tools
-- **APK Analyzer** - Analyze APK permissions, components, and structure
-- **ProGuard Config Generator** - Generate obfuscation rules
-- **Security Checker** - Detect common vulnerabilities
+## 🎯 Features Overview
+
+<table>
+<tr>
+<td width="50%">
+
+### 🤖 Android Security Tools
+- **APK Analyzer** - Deep APK structure analysis
+- **ProGuard Config Generator** - Auto-generate obfuscation rules
+- **Security Checker** - Detect vulnerabilities
 - **Certificate Validator** - Verify APK signatures
 
-### 2️⃣ Development Tools
+</td>
+<td width="50%">
+
+### 🔧 Development Tools
 - **Build Automation** - Automated APK building
-- **Version Manager** - Track app versions
+- **Version Manager** - Semantic versioning
 - **Dependency Checker** - Find outdated libraries
-- **Code Quality Analyzer** - Detect code issues
+- **Code Quality Analyzer** - Code metrics
 
-### 3️⃣ Penetration Testing Tools
-- **Network Scanner** - Analyze local networks
-- **Port Scanner** - Discover open ports
-- **SSL/TLS Checker** - Validate certificates
-- **Header Analyzer** - Check HTTP security headers
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### 4️⃣ Utility Tools
-- **File Hash Generator** - MD5/SHA/SHA256 checksums
-- **QR Code Generator/Scanner** - Create and read QR codes
+### 🔍 Penetration Testing
+- **Network Scanner** - Discover active hosts
+- **Port Scanner** - Find open ports
+- **SSL/TLS Checker** - Certificate validation
+- **Header Analyzer** - HTTP security headers
+
+</td>
+<td width="50%">
+
+### 🎁 Utility Tools
+- **File Hash Generator** - MD5/SHA checksums
+- **QR Code Generator** - Create QR codes
 - **Encryption Tool** - AES encryption/decryption
-- **Password Strength Checker** - Analyze password security
+- **Password Checker** - Strength analysis
 
-### 5️⃣ Bug Bounty Helpers
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🐛 Bug Bounty Helpers
 - **Subdomain Finder** - Enumerate subdomains
 - **WHOIS Lookup** - Domain information
-- **URL Parameter Analyzer** - Test URL parameters
+- **URL Parameter Analyzer** - Test parameters
 - **API Testing Tool** - Test API endpoints
 
-## 📦 Installation
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+### Installation
 
 ```bash
 # Clone the repository
@@ -54,35 +89,203 @@ pip install -r requirements.txt
 python sectoolkit.py
 ```
 
-## 🎯 Usage
+### Requirements
+- Python 3.8 or higher
+- pip (Python package manager)
+- Internet connection (for some tools)
 
+---
+
+## 📖 Usage
+
+### Interactive Mode (Recommended)
 ```bash
-# Interactive menu
 python sectoolkit.py
+```
+Navigate through the beautiful menu interface and select your desired tool!
 
-# Direct tool access
+### Direct Tool Access
+```bash
+# APK Analysis
 python sectoolkit.py --tool apk-analyzer --file app.apk
+
+# Port Scanning
 python sectoolkit.py --tool port-scanner --target 192.168.1.1
+
+# Hash Generation
 python sectoolkit.py --tool hash-generator --file document.pdf
 ```
 
-## 📚 Requirements
-- Python 3.8+
-- See `requirements.txt` for dependencies
+### Programmatic Usage
+```python
+from modules.android_security import AndroidSecurity
+from modules.pentest_tools import PentestTools
 
-## 🤝 Contributing
-Contributions are welcome! Please read CONTRIBUTING.md first.
+# Analyze APK
+AndroidSecurity.apk_analyzer('app.apk')
 
-## 📄 License
-MIT License - See LICENSE file
-
-## 👨‍💻 Author
-Created for educational and ethical security research purposes.
-
-## 🔗 Links
-- Documentation: [Wiki](https://github.com/kishan7878/SecToolkit/wiki)
-- Issues: [Report bugs](https://github.com/kishan7878/SecToolkit/issues)
-- Discussions: [Community](https://github.com/kishan7878/SecToolkit/discussions)
+# Scan ports
+PentestTools.port_scanner('192.168.1.1', 1, 1000)
+```
 
 ---
-⭐ Star this repo if you find it useful!
+
+## 📚 Documentation
+
+- **[Usage Guide](USAGE.md)** - Comprehensive guide for all tools
+- **[Examples](examples/)** - Example scripts and use cases
+- **[Contributing](CONTRIBUTING.md)** - How to contribute
+- **[License](LICENSE)** - MIT License
+
+---
+
+## 🎬 Screenshots
+
+### Main Menu
+```
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   ███████╗███████╗ ██████╗████████╗ ██████╗  ██████╗ ██╗  ║
+║   ██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔═══██╗██║  ║
+║   ███████╗█████╗  ██║        ██║   ██║   ██║██║   ██║██║  ║
+║   ╚════██║██╔══╝  ██║        ██║   ██║   ██║██║   ██║██║  ║
+║   ███████║███████╗╚██████╗   ██║   ╚██████╔╝╚██████╔╝███████╗║
+║   ╚══════╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝║
+║                                                           ║
+║              Complete Security Toolkit v1.0              ║
+║              Educational Purpose Only                    ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+---
+
+## 🛠️ Tools Breakdown
+
+### Android Security Tools
+
+#### APK Analyzer
+Comprehensive APK analysis including:
+- File hash calculation (SHA256)
+- APK structure analysis
+- DEX files detection
+- Native libraries and architectures
+- Signing status verification
+- ProGuard configuration detection
+
+#### Security Checker
+Scans for common vulnerabilities:
+- Unsigned APKs
+- Hardcoded secrets
+- Debuggable flags
+- Backup allowance
+- Clear text traffic
+
+### Penetration Testing Tools
+
+#### Network Scanner
+- Fast network host discovery
+- Multi-threaded scanning
+- CIDR notation support
+- Active host detection
+
+#### Port Scanner
+- Customizable port ranges
+- Service identification
+- Multi-threaded scanning
+- Common ports database
+
+### Bug Bounty Helpers
+
+#### Subdomain Finder
+- DNS resolution
+- Common subdomain enumeration
+- A record lookup
+- Integration suggestions (Sublist3r, Amass)
+
+#### API Testing Tool
+- Multiple HTTP methods (GET, POST, PUT, DELETE)
+- Custom headers support
+- JSON payload handling
+- Response analysis
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📋 Roadmap
+
+- [ ] Add more Android security checks
+- [ ] Implement automated reporting
+- [ ] Add web vulnerability scanner
+- [ ] Create GUI version
+- [ ] Add Docker support
+- [ ] Integrate with CI/CD pipelines
+- [ ] Add more bug bounty tools
+- [ ] Create mobile app version
+
+---
+
+## 🌟 Star History
+
+If you find this project useful, please consider giving it a star! ⭐
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Additional Disclaimer:** This software is provided for educational and ethical security research purposes only. Users must comply with all applicable laws and regulations.
+
+---
+
+## 👨‍💻 Author
+
+Created with ❤️ for the security community
+
+---
+
+## 🔗 Links
+
+- **Repository:** [github.com/kishan7878/SecToolkit](https://github.com/kishan7878/SecToolkit)
+- **Issues:** [Report bugs](https://github.com/kishan7878/SecToolkit/issues)
+- **Discussions:** [Join the community](https://github.com/kishan7878/SecToolkit/discussions)
+
+---
+
+## 📞 Support
+
+- 📖 Check the [Usage Guide](USAGE.md)
+- 🐛 [Report Issues](https://github.com/kishan7878/SecToolkit/issues)
+- 💬 [Discussions](https://github.com/kishan7878/SecToolkit/discussions)
+- ⭐ Star the repo if you find it useful!
+
+---
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors
+- Inspired by the security research community
+- Built with Python and love for ethical hacking
+
+---
+
+<div align="center">
+
+**Made for Educational Purposes | Use Responsibly | Stay Ethical** 🛡️
+
+[![GitHub](https://img.shields.io/badge/GitHub-SecToolkit-blue?style=for-the-badge&logo=github)](https://github.com/kishan7878/SecToolkit)
+
+</div>
