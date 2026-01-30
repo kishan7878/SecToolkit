@@ -1,5 +1,6 @@
 # 🛡️ SecToolkit - Complete Security Toolkit
 
+[![Tests](https://github.com/kishan7878/SecToolkit/actions/workflows/test.yml/badge.svg)](https://github.com/kishan7878/SecToolkit/actions/workflows/test.yml)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/kishan7878/SecToolkit?style=social)](https://github.com/kishan7878/SecToolkit/stargazers)
@@ -135,6 +136,7 @@ PentestTools.port_scanner('192.168.1.1', 1, 1000)
 - **[Usage Guide](USAGE.md)** - Comprehensive guide for all tools
 - **[Examples](examples/)** - Example scripts and use cases
 - **[Contributing](CONTRIBUTING.md)** - How to contribute
+- **[Security Policy](SECURITY.md)** - Ethical use guidelines
 - **[License](LICENSE)** - MIT License
 
 ---
@@ -208,6 +210,21 @@ Scans for common vulnerabilities:
 - Custom headers support
 - JSON payload handling
 - Response analysis
+
+---
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+python test_basic.py
+```
+
+The toolkit includes automated tests that verify:
+- File structure integrity
+- Python syntax validation
+- Module imports
+- Basic functionality
 
 ---
 
