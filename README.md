@@ -1,6 +1,5 @@
 # 🛡️ SecToolkit - Complete Security Toolkit
 
-[![Tests](https://github.com/kishan7878/SecToolkit/actions/workflows/test.yml/badge.svg)](https://github.com/kishan7878/SecToolkit/actions/workflows/test.yml)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/kishan7878/SecToolkit?style=social)](https://github.com/kishan7878/SecToolkit/stargazers)
